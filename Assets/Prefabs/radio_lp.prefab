@@ -459,6 +459,8 @@ MonoBehaviour:
   _channels:
   - {fileID: 8300000, guid: 3759b4870b58e4da29161426ce093aca, type: 3}
   - {fileID: 8300000, guid: 300f4a24b08bf47748791df7223f03bb, type: 3}
+  _rightChannel: 1
+  _tv: {fileID: 0}
 --- !u!1 &8507900269745930862
 GameObject:
   m_ObjectHideFlags: 0
