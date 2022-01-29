@@ -20,7 +20,7 @@ public class Portal : MonoBehaviour
     private void Start()
     {
         _myEffect = transform.GetChild(0).gameObject;
-        _portalBEffect = _portalB.transform.GetChild(0).gameObject;
+        _portalBEffect = _portalB.transform.GetChild(2).gameObject;
         _portalBPoint = _portalB.transform.GetChild(1); 
     }
 

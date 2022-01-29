@@ -38,7 +38,7 @@ public class PickupItem : Interactable
     {
         _rigidBody = gameObject.AddComponent<Rigidbody>();
         _collider.enabled = true;
-        _rigidBody.AddForce(force);
+        //_rigidBody.AddForce(force);
     }
 
 }
