@@ -19,7 +19,7 @@ public class PlayerInteract : MonoBehaviour
     private void Update()
     {
         RaycastHit hit;
-        if(Physics.SphereCast(transform.position, 0.5f, transform.forward, out hit, 20, _interactableLayer))
+        if(Physics.SphereCast(transform.position, 0.5f, transform.forward, out hit, 5, _interactableLayer))
         {
             var interactable = hit.transform.GetComponent<Interactable>();
             _currentInteractable = interactable;
@@ -42,7 +42,7 @@ public class PlayerInteract : MonoBehaviour
     {
         if (_currentInteractable)
         {
-            _currentInteractable.DoAction();
+            _currentInteractable.DoAction(gameObject);
         }
     }
 
@@ -54,6 +54,7 @@ public class PlayerInteract : MonoBehaviour
 
     void Deactivate()
     {
+        _currentInteractable = null;
         _actionWindow.Deactivate();
     }
 }

@@ -9,5 +9,5 @@ public abstract class Interactable : MonoBehaviour
 
     public string ActionName => _actionName;
 
-    public abstract void DoAction();
+    public abstract void DoAction(GameObject player);
 }
