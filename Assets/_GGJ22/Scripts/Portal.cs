@@ -26,7 +26,9 @@ public class Portal : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.collider.CompareTag("Item"))
+        Item item = collision.gameObject.GetComponent<Item>();
+
+        if(item && !item.itemChanged)
         {
             _myEffect.SetActive(true);
             _Item = collision.gameObject;
@@ -44,7 +46,7 @@ public class Portal : MonoBehaviour
         yield return new WaitForSeconds(_portalsGapTime);
         _portalBEffect.SetActive(false);
         _Item.transform.position = _portalBPoint.position;
-        _Item.tag = "Untagged";
         _Item.SetActive(true);
+        _Item.GetComponent<Item>().ChangeItem();
     }
 }
