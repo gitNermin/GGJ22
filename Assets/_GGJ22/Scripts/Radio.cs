@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Radio : MonoBehaviour
+public class Radio : Interactable
 {
     [SerializeField]
     private AudioClip[] _channels;
@@ -20,6 +20,7 @@ public class Radio : MonoBehaviour
 
     private void Start()
     {
+        _actionName = "Click To SwitchOn";
         _audioSource = gameObject.AddComponent<AudioSource>();
         _audioSource.clip = _channels[_currChannel];
         _audioSource.loop = true;
@@ -48,6 +49,17 @@ public class Radio : MonoBehaviour
             _tv.canBeOpen = true;
             _tv.SwitchONOFF();
         }
+    }
+
+    public override void DoAction(GameObject player)
+    {
+        if (!_audioSource.isPlaying)
+        {
+            SwitchONOFF();
+            _actionName = "Click To Change Channel";
+        }
+        else
+            ChangeChanel();
     }
 
     /*private void Update()
