@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ItemPortalMaterial
+  m_Name: Portal2
   m_Shader: {fileID: -6465566751694194690, guid: 264b02edc175d4e9cba22c27a4745ef8, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -41,6 +41,6 @@ Material:
     - Vector1_8e5392cdf4974a4a9714b7b5fb55a405: 40
     - Vector1_9da86a5a795845a096eff768d54ef9b4: 2
     m_Colors:
-    - Color_1583a479f1c94e8e9f675b5e607214dc: {r: 1.4710238, g: 6.2658644, b: 7.9963336, a: 0.003921569}
+    - Color_1583a479f1c94e8e9f675b5e607214dc: {r: 8.353651, g: 0.43736383, b: 5.196697, a: 0.003921569}
     - Color_7e5956a453b946479a20e56547e5567f: {r: 0.9137255, g: 0.5482353, b: 0, a: 1}
   m_BuildTextureStacks: []

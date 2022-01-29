@@ -4279,14 +4279,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 621157393132870525, guid: 58ed9824fe210b94494d0834e39e8956, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2132768278471453588, guid: 58ed9824fe210b94494d0834e39e8956, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7097694230286716675, guid: 58ed9824fe210b94494d0834e39e8956, type: 3}
       propertyPath: m_RootOrder
       value: 23
@@ -4335,14 +4327,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: Book
       objectReference: {fileID: 0}
-    - target: {fileID: 7097694230286716687, guid: 58ed9824fe210b94494d0834e39e8956, type: 3}
-      propertyPath: _itemB
-      value: 
-      objectReference: {fileID: 7646786813247373428}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 58ed9824fe210b94494d0834e39e8956, type: 3}
---- !u!1 &7646786813247373428 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 621157393132870525, guid: 58ed9824fe210b94494d0834e39e8956, type: 3}
-  m_PrefabInstance: {fileID: 7097694230873283337}
-  m_PrefabAsset: {fileID: 0}
