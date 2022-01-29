@@ -5,7 +5,7 @@ using UnityEngine.UIElements;
 
 public abstract class Interactable : MonoBehaviour
 {
-    [SerializeField] private string _actionName;
+    [SerializeField] protected string _actionName;
 
     public string ActionName => _actionName;
 
