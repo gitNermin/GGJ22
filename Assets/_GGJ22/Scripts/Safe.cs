@@ -50,6 +50,8 @@ public class Safe : Interactable
     {
         _door.enabled = true;
         _screenText.gameObject.SetActive(false);
+        Exit();
+        GetComponent<BoxCollider>().enabled = false;
     }
 
     private void ClearCode()
