@@ -49,6 +49,10 @@ public class Radio : Interactable
             _tv.canBeOpen = true;
             _tv.SwitchONOFF();
         }
+        else
+        {
+            _tv.canBeOpen = false;
+        }
     }
 
     public override void DoAction(GameObject player)

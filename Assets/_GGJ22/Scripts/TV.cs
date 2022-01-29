@@ -1,19 +1,44 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TV : MonoBehaviour
+public class TV : Interactable
 {
     [SerializeField]
     private GameObject[] _channels;
 
+    [SerializeField] private GameObject _diamond;
+
     [SerializeField]
     private GameObject _nosignalChannel;
 
-    public bool canBeOpen;
+    [SerializeField] private int _rightChannel;
+
+    private bool _canbeOpen;
+    public bool canBeOpen
+    {
+        get
+        {
+            return _canbeOpen;
+        }
+        set
+        {
+            _canbeOpen = value;
+            _collider.enabled = value;
+        }
+    }
 
     private int _currChannel = 0;
 
+    private Collider _collider;
+
+    private void Start()
+    {
+        _actionName = "Click To SwitchOn";
+        _collider = GetComponent<Collider>();
+        _collider.enabled = false;
+    }
 
     public void SwitchONOFF()
     {
@@ -22,6 +47,7 @@ public class TV : MonoBehaviour
 
         _nosignalChannel.SetActive(!_nosignalChannel.activeSelf);
         _channels[_currChannel].SetActive(!_nosignalChannel.activeSelf);
+
     }
 
     public void ChangeChanel()
@@ -32,6 +58,11 @@ public class TV : MonoBehaviour
         _channels[_currChannel].SetActive(false);
         _currChannel = (_currChannel + 1) % _channels.Length;
         _channels[_currChannel].SetActive(true);
+        
+        if (_currChannel == _rightChannel)
+        {
+            if(_diamond)_diamond.SetActive(true);
+        }
     }
 
     /*private void Update()
@@ -42,4 +73,14 @@ public class TV : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
             ChangeChanel();
     }*/
+    public override void DoAction(GameObject player)
+    {
+        if (_nosignalChannel.activeSelf)
+        {
+            SwitchONOFF();
+            _actionName = "Click To Change Channel";
+        }
+        else
+            ChangeChanel();
+    }
 }
