@@ -1,40 +1,104 @@
 fileFormatVersion: 2
 guid: 15d00228747522a499ed794c721ede47
 ModelImporter:
-  serializedVersion: 22
-  fileIDToRecycleName:
-    100000: //RootNode
-    100002: Bed_Canopy_Cloth
-    100004: Bed_Canopy_static
-    100006: Bedsheet
-    100008: Pillow1
-    100010: Pillow2
-    400000: //RootNode
-    400002: Bed_Canopy_Cloth
-    400004: Bed_Canopy_static
-    400006: Bedsheet
-    400008: Pillow1
-    400010: Pillow2
-    2100000: Bed_Canopy
-    2100002: Bed_Sheets
-    2300000: //RootNode
-    2300002: Bed_Canopy_Cloth
-    2300004: Bed_Canopy_static
-    2300006: Bedsheet
-    2300008: Pillow1
-    2300010: Pillow2
-    3300000: //RootNode
-    3300002: Bed_Canopy_Cloth
-    3300004: Bed_Canopy_static
-    3300006: Bedsheet
-    3300008: Pillow1
-    3300010: Pillow2
-    4300000: Bed_queen01
-    4300002: Bed_Canopy_Cloth
-    4300004: Bedsheet
-    4300006: Pillow1
-    4300008: Pillow2
-    4300010: Bed_Canopy_static
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: //RootNode
+  - first:
+      1: 100002
+    second: Bed_Canopy_Cloth
+  - first:
+      1: 100004
+    second: Bed_Canopy_static
+  - first:
+      1: 100006
+    second: Bedsheet
+  - first:
+      1: 100008
+    second: Pillow1
+  - first:
+      1: 100010
+    second: Pillow2
+  - first:
+      4: 400000
+    second: //RootNode
+  - first:
+      4: 400002
+    second: Bed_Canopy_Cloth
+  - first:
+      4: 400004
+    second: Bed_Canopy_static
+  - first:
+      4: 400006
+    second: Bedsheet
+  - first:
+      4: 400008
+    second: Pillow1
+  - first:
+      4: 400010
+    second: Pillow2
+  - first:
+      21: 2100000
+    second: Bed_Canopy
+  - first:
+      21: 2100002
+    second: Bed_Sheets
+  - first:
+      23: 2300000
+    second: //RootNode
+  - first:
+      23: 2300002
+    second: Bed_Canopy_Cloth
+  - first:
+      23: 2300004
+    second: Bed_Canopy_static
+  - first:
+      23: 2300006
+    second: Bedsheet
+  - first:
+      23: 2300008
+    second: Pillow1
+  - first:
+      23: 2300010
+    second: Pillow2
+  - first:
+      33: 3300000
+    second: //RootNode
+  - first:
+      33: 3300002
+    second: Bed_Canopy_Cloth
+  - first:
+      33: 3300004
+    second: Bed_Canopy_static
+  - first:
+      33: 3300006
+    second: Bedsheet
+  - first:
+      33: 3300008
+    second: Pillow1
+  - first:
+      33: 3300010
+    second: Pillow2
+  - first:
+      43: 4300000
+    second: Bed_queen01
+  - first:
+      43: 4300002
+    second: Bed_Canopy_Cloth
+  - first:
+      43: 4300004
+    second: Bedsheet
+  - first:
+      43: 4300006
+    second: Pillow1
+  - first:
+      43: 4300008
+    second: Pillow2
+  - first:
+      43: 4300010
+    second: Bed_Canopy_static
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -47,7 +111,7 @@ ModelImporter:
       name: Bed_Sheets
     second: {fileID: 2100000, guid: 594b597cc0f644b42bea4ac3fc06ec0e, type: 2}
   materials:
-    importMaterials: 0
+    materialImportMode: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -64,6 +128,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -78,21 +143,31 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    fileIdsGeneration: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
   tangentSpace:
@@ -100,10 +175,13 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -113,14 +191,17 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 0
   humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
   additionalBone: 0
   userData: 
   assetBundleName: 

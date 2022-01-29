@@ -8,7 +8,7 @@ public class TV : Interactable
     [SerializeField]
     private GameObject[] _channels;
 
-    [SerializeField] private GameObject _diamond;
+    [SerializeField] private Rigidbody _painting;
 
     [SerializeField]
     private GameObject _nosignalChannel;
@@ -61,7 +61,7 @@ public class TV : Interactable
         
         if (_currChannel == _rightChannel)
         {
-            if(_diamond)_diamond.SetActive(true);
+            if(_painting)_painting.useGravity = true;
         }
     }
 

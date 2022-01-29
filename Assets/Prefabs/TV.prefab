@@ -108,7 +108,8 @@ GameObject:
   - component: {fileID: 3169872678927174651}
   - component: {fileID: 871817208416403249}
   - component: {fileID: 709000062}
-  m_Layer: 0
+  - component: {fileID: 8173734249168581029}
+  m_Layer: 8
   m_Name: TV
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,7 +125,7 @@ Transform:
   m_GameObject: {fileID: 1664552104956845796}
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0.7071068, w: 0}
   m_LocalPosition: {x: -3.47, y: -0.68, z: 0.04}
-  m_LocalScale: {x: -41.042534, y: -41.042534, z: -41.042534}
+  m_LocalScale: {x: -11.204828, y: -11.204828, z: -11.204828}
   m_Children:
   - {fileID: 2006569689833483253}
   - {fileID: 1999085074}
@@ -193,11 +194,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ee4d06c99291460daa250f2feaa3f79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _actionName: 
   _channels:
   - {fileID: 1999085070}
   - {fileID: 4156353467321214490}
+  _painting: {fileID: 0}
   _nosignalChannel: {fileID: 2006569689833483242}
-  canBeOpen: 0
+  _rightChannel: 1
+--- !u!65 &8173734249168581029
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664552104956845796}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.14065292, y: 0.020880055, z: 0.08601422}
+  m_Center: {x: -0.0005049892, y: 0.004209581, z: -0.06529143}
 --- !u!1 &2006569689833483242
 GameObject:
   m_ObjectHideFlags: 0

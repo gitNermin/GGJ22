@@ -1,49 +1,131 @@
 fileFormatVersion: 2
 guid: 391e0f60f8d78f94f8199f62c362c8ec
 ModelImporter:
-  serializedVersion: 22
-  fileIDToRecycleName:
-    100000: Cupboard.002
-    100002: Cupboard.005
-    100004: Cupboard.006
-    100006: Cupboard_01a.001
-    100008: //RootNode
-    100010: Cupboard_01a.003
-    100012: Cupboard_door_01
-    100014: Cupboard_door_02.001
-    400000: Cupboard.002
-    400002: Cupboard.005
-    400004: Cupboard.006
-    400006: Cupboard_01a.001
-    400008: //RootNode
-    400010: Cupboard_01a.003
-    400012: Cupboard_door_01
-    400014: Cupboard_door_02.001
-    2100000: Cupboards
-    2300000: Cupboard.002
-    2300002: Cupboard.005
-    2300004: Cupboard.006
-    2300006: Cupboard_01a.001
-    2300008: Cupboard_01a.003
-    2300010: //RootNode
-    2300012: Cupboard_door_01
-    2300014: Cupboard_door_02.001
-    3300000: Cupboard.002
-    3300002: Cupboard.005
-    3300004: Cupboard.006
-    3300006: Cupboard_01a.001
-    3300008: Cupboard_01a.003
-    3300010: //RootNode
-    3300012: Cupboard_door_01
-    3300014: Cupboard_door_02.001
-    4300000: Cupboard.006
-    4300002: Cupboard_01a.001
-    4300004: Cupboard.005
-    4300006: Cupboard.002
-    4300008: Cupboard_01a.003
-    4300010: Cupboard_01b
-    4300012: Cupboard_door_02.001
-    4300014: Cupboard_door_01
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Cupboard.002
+  - first:
+      1: 100002
+    second: Cupboard.005
+  - first:
+      1: 100004
+    second: Cupboard.006
+  - first:
+      1: 100006
+    second: Cupboard_01a.001
+  - first:
+      1: 100008
+    second: //RootNode
+  - first:
+      1: 100010
+    second: Cupboard_01a.003
+  - first:
+      1: 100012
+    second: Cupboard_door_01
+  - first:
+      1: 100014
+    second: Cupboard_door_02.001
+  - first:
+      4: 400000
+    second: Cupboard.002
+  - first:
+      4: 400002
+    second: Cupboard.005
+  - first:
+      4: 400004
+    second: Cupboard.006
+  - first:
+      4: 400006
+    second: Cupboard_01a.001
+  - first:
+      4: 400008
+    second: //RootNode
+  - first:
+      4: 400010
+    second: Cupboard_01a.003
+  - first:
+      4: 400012
+    second: Cupboard_door_01
+  - first:
+      4: 400014
+    second: Cupboard_door_02.001
+  - first:
+      21: 2100000
+    second: Cupboards
+  - first:
+      23: 2300000
+    second: Cupboard.002
+  - first:
+      23: 2300002
+    second: Cupboard.005
+  - first:
+      23: 2300004
+    second: Cupboard.006
+  - first:
+      23: 2300006
+    second: Cupboard_01a.001
+  - first:
+      23: 2300008
+    second: Cupboard_01a.003
+  - first:
+      23: 2300010
+    second: //RootNode
+  - first:
+      23: 2300012
+    second: Cupboard_door_01
+  - first:
+      23: 2300014
+    second: Cupboard_door_02.001
+  - first:
+      33: 3300000
+    second: Cupboard.002
+  - first:
+      33: 3300002
+    second: Cupboard.005
+  - first:
+      33: 3300004
+    second: Cupboard.006
+  - first:
+      33: 3300006
+    second: Cupboard_01a.001
+  - first:
+      33: 3300008
+    second: Cupboard_01a.003
+  - first:
+      33: 3300010
+    second: //RootNode
+  - first:
+      33: 3300012
+    second: Cupboard_door_01
+  - first:
+      33: 3300014
+    second: Cupboard_door_02.001
+  - first:
+      43: 4300000
+    second: Cupboard.006
+  - first:
+      43: 4300002
+    second: Cupboard_01a.001
+  - first:
+      43: 4300004
+    second: Cupboard.005
+  - first:
+      43: 4300006
+    second: Cupboard.002
+  - first:
+      43: 4300008
+    second: Cupboard_01a.003
+  - first:
+      43: 4300010
+    second: Cupboard_01b
+  - first:
+      43: 4300012
+    second: Cupboard_door_02.001
+  - first:
+      43: 4300014
+    second: Cupboard_door_01
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -51,7 +133,7 @@ ModelImporter:
       name: Cupboards
     second: {fileID: 2100000, guid: ff1d8ab84254f2849917f1f93fc015e5, type: 2}
   materials:
-    importMaterials: 0
+    materialImportMode: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -68,6 +150,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -82,21 +165,31 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    fileIdsGeneration: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
   tangentSpace:
@@ -104,10 +197,13 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -117,14 +213,17 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 0
   humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
   additionalBone: 0
   userData: 
   assetBundleName: 
