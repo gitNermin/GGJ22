@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
 public class PickupItemsController : MonoBehaviour
@@ -79,16 +80,16 @@ public class PickupItemsController : MonoBehaviour
             _currentItem = item;
             item.transform.SetParent(_pickupLocation);
             _inventory.Add(_currentItem);
-            StartCoroutine(Pickup(0.3f));
+            StartCoroutine(MoveObject(_currentItem.transform, 0.3f, _pickupLocation, null));
         }
     }
 
-    IEnumerator Pickup(float time)
+    IEnumerator MoveObject(Transform obj, float time, Transform endValues, UnityAction onFinished)
     {
         var wait = new WaitForEndOfFrame();
         float passedTime = 0;
-        Vector3 startPosition = _currentItem.transform.position;
-        Quaternion startRotation = _currentItem.transform.rotation;
+        Vector3 startPosition = obj.position;
+        Quaternion startRotation = obj.rotation;
         while (passedTime<time)
         {
             yield return wait;
@@ -98,10 +99,22 @@ public class PickupItemsController : MonoBehaviour
                 passedTime = time;
             }
             float alpha = passedTime / time;
-            _currentItem.transform.position = Vector3.Lerp(startPosition, _pickupLocation.position, alpha);
-            _currentItem.transform.rotation = Quaternion.Lerp(startRotation, _pickupLocation.rotation, alpha);
+            obj.position = Vector3.Lerp(startPosition, endValues.position, alpha);
+            obj.rotation = Quaternion.Lerp(startRotation, endValues.rotation, alpha);
             
         }
+        onFinished?.Invoke();
+    }
 
+    public void Place(Transform dropPosition)
+    {
+        if (_currentItem)
+        {
+            _currentItem.transform.SetParent(null);
+            _inventory.Remove(_currentItem);
+            PickupItem item = _currentItem;
+            StartCoroutine(MoveObject(_currentItem.transform,0.3f, dropPosition, () => { item.Throw(Vector3.zero);}));
+            _currentItem = null;
+        }
     }
 }

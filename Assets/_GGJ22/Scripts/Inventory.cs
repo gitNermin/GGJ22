@@ -51,6 +51,7 @@ public class Inventory : ScriptableObject
     public void Remove(PickupItem item)
     {
         _items.Remove(item);
+        _currentSelectedItem = -1;
     }
     
     

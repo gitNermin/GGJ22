@@ -27,7 +27,7 @@ public class PlayerInteract : MonoBehaviour
             _currentInteractable = interactable;
             if (interactable)
             {
-                if (interactable is PickupItem && _controller.HasItem)
+                if (interactable is PickupItem && _controller.HasItem || interactable is DropSurface && !_controller.HasItem)
                 {
                     Deactivate();
                 }
