@@ -45,7 +45,7 @@
                     "path": "<Gamepad>/leftStick",
                     "interactions": "",
                     "processors": "StickDeadzone",
-                    "groups": "Gamepad",
+                    "groups": "Gamepad;PS4 Controller",
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -56,7 +56,7 @@
                     "path": "<Gamepad>/rightStick",
                     "interactions": "",
                     "processors": "InvertVector2(invertX=false),StickDeadzone,ScaleVector2(x=300,y=300)",
-                    "groups": "Gamepad",
+                    "groups": "Gamepad;PS4 Controller",
                     "action": "Look",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -67,7 +67,7 @@
                     "path": "<Gamepad>/buttonSouth",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Gamepad",
+                    "groups": "Gamepad;PS4 Controller",
                     "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -78,7 +78,7 @@
                     "path": "<Gamepad>/leftTrigger",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Gamepad",
+                    "groups": "Gamepad;PS4 Controller",
                     "action": "Sprint",
                     "isComposite": false,
                     "isPartOfComposite": false
