@@ -41,13 +41,4 @@ public class PickupItem : Interactable
         _rigidBody.AddForce(force);
     }
 
-    public void AddToInventory()
-    {
-        
-    }
-
-    public void Pickup()
-    {
-        
-    }
 }

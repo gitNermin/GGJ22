@@ -10,10 +10,12 @@ public class PlayerInteract : MonoBehaviour
     [SerializeField] private InputActionReference _input;
     [SerializeField] private ActionWindow _actionWindow;
     private Interactable _currentInteractable;
+    private PickupItemsController _controller;
 
     private void Start()
     {
         _input.action.performed += OnInteract;
+        _controller = GetComponent<PickupItemsController>();
     }
 
     private void Update()
@@ -25,7 +27,14 @@ public class PlayerInteract : MonoBehaviour
             _currentInteractable = interactable;
             if (interactable)
             {
-                Activate();
+                if (interactable is PickupItem && _controller.HasItem)
+                {
+                    Deactivate();
+                }
+                else
+                {
+                    Activate();
+                }
             }
             else
             {
